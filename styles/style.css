@@ -2,7 +2,8 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-main, sans-serif);
-  font-weight: "wght" var(--font-weight-text);
+  font-weight: var(--font-weight-text);
+  font-variation-settings: "wght" var(--font-weight-text);
   background-image: var(--page-background);
   background-size: cover;
   background-attachment: fixed;
@@ -47,6 +48,8 @@
 }
 
 .card__title {
+  font-weight: var(--font-weight-title);
+  font-variation-settings: "wght" var(--font-weight-title);
   font-size: 18px;
   line-height: 1;
   vertical-align: middle;
