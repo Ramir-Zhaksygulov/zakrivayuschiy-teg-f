@@ -1,7 +1,7 @@
 .like-icon .core,
 .like-icon .main-body {
   fill: transparent;
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .like-icon .sparks {
@@ -13,53 +13,53 @@
 }
 
 .like-icon:hover .core {
-  fill: var(--contour-color);
-  transition: fill 0.3s ease;
+  fill: var(--contour-color, #000);
+  transition: fill 0.3s linear;
   transition-delay: 0s;
 }
 
 .like-icon:hover .main-body {
-  fill: var(--contour-color);
-  transition: fill 0.3s ease;
+  fill: var(--contour-color, #000);
+  transition: fill 0.3s linear;
   transition-delay: 0.05s;
 }
 
 .like-icon:not(:hover) .core {
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
   transition-delay: 0.03s;
 }
 
 .like-icon:not(:hover) .main-body {
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
   transition-delay: 0s;
 }
 
 .like-icon:active .core {
-  fill: var(--animation-fill-color);
-  transition: fill 0.3s ease;
+  fill: var(--animation-fill-color, #ff0000);
+  transition: fill 0.3s linear;
   transition-delay: 0s;
 }
 
 .like-icon:active .main-body {
-  fill: var(--animation-fill-color);
-  transition: fill 0.3s ease;
+  fill: var(--animation-fill-color, #ff0000);
+  transition: fill 0.3s linear;
   transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .core {
-  fill: var(--animation-fill-color);
+  fill: var(--animation-fill-color, #ff0000);
   transition: fill 0.3s ease;
   transition-delay: 0s;
 }
 
 .like-icon.is-liked .main-body {
-  fill: var(--animation-fill-color);
+  fill: var(--animation-fill-color, #ff0000);
   transition: fill 0.3s ease;
   transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .contour {
-  fill: var(--animation-fill-color);
+  fill: var(--animation-fill-color, #ff0000);
   transition: fill 0.3s ease;
   transition-delay: 0.06s;
 }
@@ -97,6 +97,6 @@
 }
 
 .like-icon:not(.is-liked) .contour {
-  fill: var(--Themes-mainColor);
+  fill: var(--main-color, #000);
   transition: fill 0.1s linear;
 }
